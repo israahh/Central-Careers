@@ -1,0 +1,1134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; 
+}
+
+#w-btn1, #w-btn2 {
+  background: white;
+  border-radius: 30px;
+  color: rgb(1, 7, 20);
+  padding: 9px 30px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border: none;
+  white-space:nowrap;
+}
+
+#w-btn1 {
+  margin-left: 40px;
+}
+
+
+.sec-space {
+  padding: 2rem 0; /* Reduce padding for sections */
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 2000px;
+  margin: auto;
+}
+/* Navbar */
+
+header{
+  background-color:rgb(1, 7, 20);
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 100%;
+  z-index: 999;
+
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  
+}
+
+
+#navbar img {
+  width: 250px;
+  margin-left: 1rem;
+  height: 100px;
+  
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  margin-right: 10rem;
+  margin-left:  rem;
+}
+#menu li a{
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#menu a.active {
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#menu a:hover {
+    color: #003d80;
+}
+
+#button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 1px;
+  width: 10%;
+  margin-right: 5rem;
+}
+
+#button-container li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 70px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#button-container li a {
+  display: flex;
+  gap: 20px; 
+  justify-content: flex-start; 
+  margin-left: 1 rem; 
+}
+
+.signup-btn {
+    background-color: #003cff; /* Button background color */
+    color: #0056b3; /* Change this to your desired font color */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.signup-btn:hover {
+    background-color: #f0f0f0; /* Optional: Change background color on hover */
+    color: #003d80; /* Optional: Change font color on hover */
+}
+
+.g-btn {
+  text-decoration: none;
+  background-color: rgb(20, 52, 230);
+  cursor: pointer;
+}
+
+#menu li a, .signup-btn {
+  margin-left: 40px; 
+  text-decoration: none; 
+}
+
+
+#bar {
+  color: white; 
+  display: block; 
+  font-size: 2rem; 
+  cursor: pointer; 
+}
+
+
+.hero-box {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center; 
+  height: 80vh; 
+  text-align: left; 
+  padding: 4rem 0; /* Reduce padding for the Hero Section */
+  gap: 2rem;
+}
+
+.h-left {
+  flex: 1; 
+}
+
+
+.h-left p {
+  font-size: 3.5rem; 
+  font-weight: 500;
+  line-height: 1.2; 
+}
+.h-right {
+  padding: 1.5rem; 
+  flex: none; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
+}
+
+.h-right img {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain;  
+  display:block;
+}
+
+.hero {
+  background-color: rgbrgb(1, 7, 20);
+  padding: 2rem;
+}
+
+
+
+.hero h2 {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  line-height: 1.2; 
+  text-align: left;
+}
+
+.hero p {
+  font-size: 1.8rem; 
+  line-height: 1.6; 
+  text-align: left;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  gap: 1rem;
+  margin-top: 2rem; /* Adjust spacing */
+}
+
+.search input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 500px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.search a {
+  background-color: #0056b3;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.search a:hover {
+  background-color: #003d80;
+}
+
+#bar {
+  position: absolute; 
+  top: none ; 
+  right: .5rem; 
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Home Section */
+#hero-section {
+  background-color: #ffffff; /* Light blue background */
+  padding: 4rem 2rem; /* Add padding */
+  color: #002d5a; /* Dark blue text */
+}
+
+/* About Section */
+#about-section {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 4rem 2rem; /* Add padding */
+  color: #333; /* Dark gray text */
+  margin-top: 4rem; /* Add spacing above the section */
+  text-align: center; /* Center-align all text in the About Section */
+  padding: 2rem 0; /* Add padding for spacing */
+}
+
+#about-section h2 {
+  font-size: 2rem; /* Adjust font size for headings */
+  font-weight: 600; /* Make headings bold */
+  margin-bottom: 1rem; /* Add spacing below headings */
+  max-width: 800px; /* Limit the width of the heading */
+  margin-left: auto; /* Center the heading horizontally */
+  margin-right: auto; /* Center the heading horizontally */
+}
+
+#about-section p {
+  font-size: 1.2rem; /* Adjust font size for readability */
+  line-height: 1.8; /* Improve readability */
+  margin-bottom: 1rem; /* Add spacing below paragraphs */
+  max-width: 800px; /* Limit the width of the text */
+  margin-left: auto; /* Center the text horizontally */
+  margin-right: auto; /* Center the text horizontally */
+}
+
+#about-section .fe-box {
+  display: flex; /* Use CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+  gap: 1rem; /* Reduce spacing between feature boxes */
+  justify-content: center; /* Center the grid horizontally */
+  margin-top: 1rem; /* Reduce spacing above the feature boxes */
+}
+
+#about-section .fe-box div {
+  width: 50%; /* Allow the grid to control the width */
+  height: 200px; /* Reduce box height */
+  text-align: center; /* Center-align the content inside each box */
+  padding: 0.5rem; /* Reduce padding inside the boxes */
+  background-color: #f9f9f9; /* Optional: Add a light background color */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  display: flex; /* Use Flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+#about-section .fe-box img {
+  width: 60px; /* Reduce image size */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 0.5rem; /* Reduce spacing below the image */
+  align-items: center;
+}
+
+#about-section .fe-box div:hover {
+  transform: translateY(-5px); /* Move the box slightly upward */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add a stronger shadow */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Approved Jobs Section */
+#approved-jobs {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#approved-jobs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#approved-jobs p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.job-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.job-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+}
+
+.job-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.job-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-box li {
+  margin-bottom: 1.5rem;
+}
+
+.job-box li h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-box li p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color: #0056b3;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #003d80;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with opacity */
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #ffffff, #f0f4ff); /* Subtle gradient */
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 15px; /* Rounded corners */
+  width: 40%; /* Adjust width for a balanced look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for a "pop" effect */
+  font-family: "Poppins", sans-serif; /* Match the website's font */
+  text-align: left; /* Align text to the left */
+  position: relative; /* For the close button */
+  animation: slide-in 0.4s ease-out; /* Slide-in animation */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0056b3; /* Professional blue for the heading */
+  margin-bottom: 1rem;
+  text-align: center; /* Center the heading */
+  text-transform: uppercase; /* Make the heading stand out */
+  letter-spacing: 1px; /* Add spacing for a clean look */
+}
+
+.modal-content form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333; /* Dark gray text */
+}
+
+.modal-content form input,
+.modal-content form textarea,
+.modal-content form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc; /* Neutral border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+  transition: all 0.3s ease;
+}
+
+.modal-content form input:focus,
+.modal-content form textarea:focus {
+  border-color: #0056b3; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.5); /* Subtle blue glow */
+  outline: none; /* Remove default outline */
+}
+
+.modal-content form button {
+  background: linear-gradient(135deg, #0056b3, #007bff); /* Gradient button */
+  color: white; /* White text */
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal-content form button:hover {
+  background: linear-gradient(135deg, #003d80, #0056b3); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.close-btn {
+  color: #0056b3; /* Professional blue */
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #003d80; /* Darker blue on hover */
+  transform: rotate(90deg); /* Fun rotation effect */
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 1.5rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 699px) {
+  #about-section .fe-box {
+    grid-template-columns: 1fr; /* Make the grid a single column */
+  }
+
+  #about-section .fe-box div {
+    width: 100%; /* Make each box take the full width */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+@media(max-width: 699px) {
+  #menu {
+    background-color: rgb(1, 7, 20);
+    display: none;
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 40px; 
+    padding: 30px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+  }
+
+  #menu.active {
+    right: 0; 
+    display: flex;
+    flex-direction: column; 
+    opacity: 1;
+  }
+
+  #menu li {
+    padding: 1rem;
+  }
+
+  #menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .approved-jobs {
+    white-space: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hero-box {
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: start;
+    text-align: center;
+    height: auto;
+    padding: 8rem 0;
+  }
+
+  .h-right img {
+    max-width: 50%; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+}
+
+/* Submit Postings Section */
+.submit-postings {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.submit-postings h2 {
+  font-size: 2rem;
+  color: #0056b3; /* Professional blue */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.submit-postings p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.submit-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.submit-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.submit-form input,
+.submit-form textarea,
+.submit-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-form input:focus,
+.submit-form textarea:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+  outline: none;
+}
+
+.submit-form button {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Access Code Section */
+.access-code-section {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem auto;
+    max-width: 600px; /* Center the section */
+    text-align: center;
+}
+
+.access-code-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0056b3; /* Professional blue */
+    margin-bottom: 1rem;
+}
+
+.access-code-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.access-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.access-code-container input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 70%;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.access-code-container input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.access-code-container button {
+    padding: 0.8rem 1.5rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.access-code-container button:hover {
+    background-color: #003d80;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Counselor Approval Section */
+#counselor-approval {
+    display: none;
+    padding: 2rem 0;
+    text-align: center; /* Center-align the entire section */
+}
+
+#counselor-approval h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0056b3; /* Professional blue */
+}
+
+#counselor-approval p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#counselor-approval ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the list container */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+#counselor-approval li {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align all content inside the list items */
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content horizontally */
+    justify-content: center; /* Center-align content vertically */
+}
+
+#counselor-approval li h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center the job title */
+}
+
+#counselor-approval li p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+    line-height: 1.5; /* Improve readability */
+    text-align: center; /* Center-align all paragraph text */
+    width: 100%; /* Ensure the text spans the full width */
+}
+
+#counselor-approval button {
+    background-color: #0056b3;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem; /* Add spacing between buttons */
+}
+
+#counselor-approval button:hover {
+    background-color: #003d80;
+}
+
+/* Approve/Reject Buttons */
+.counselor-approval .approve-btn {
+    background-color: #28a745; /* Green for Approve */
+    color: white;
+}
+
+.counselor-approval .approve-btn:hover {
+    background-color: #218838; /* Green for Approve */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.counselor-approval .reject-btn {
+    background-color: #dc3545; /* Red for Reject */
+    color: white;
+}
+
+.counselor-approval .reject-btn:hover {
+    background-color: #c82333;
+}
+
+/* View Applicants Section */
+#view-applicants {
+  display: none;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#view-applicants h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#view-applicants p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#view-applicants ul {
+  list-style: none;
+  padding: 0;
+}
+
+#view-applicants li {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center-align all content inside the list items */
+}
+
+#view-applicants li h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center; /* Center the text */
+  display: block; /* Ensure it behaves like a block element */
+  width: 100%; /* Take up the full width of the container */
+}
+
+#view-applicants li p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5; /* Improve readability */
+}
+
+#view-applicants li p strong {
+  color: #333; /* Make the labels darker for emphasis */
+}
+
+#view-applicants li a {
+  text-decoration: underline;
+}
+
+/* View Applicants Section */
+.view-applicants {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.view-applicants h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+.view-applicants p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.view-applicants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.view-applicants li {
+    background: #f9f9f9;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.view-applicants li h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.view-applicants li p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.view-applicants li a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-applicants li a:hover {
+    background-color: #003d80;
+}
+
+/* Center Job Titles in View Applicants and Counselor Approval Sections */
+#view-applicants li h4,
+#counselor-approval li h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center the text */
+    display: block; /* Ensure it behaves like a block element */
+    width: 100%; /* Take up the full width of the container */
+}
+
+/* Ensure Parent Containers Do Not Override Alignment */
+#view-applicants li,
+#counselor-approval li {
+    text-align: center; /* Center-align all content inside the list items */
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9; /* Light gray background */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0056b3; /* Professional blue */
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Contact Cards */
+.contact-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-card ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-card ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #003d80;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #021931; /* Professional blue */
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+.footer p, .footer a {
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color for links */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #dcdcdc;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1rem;
+}

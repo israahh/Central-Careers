@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Central Careers - Search Jobs</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .view-more-btn {
+              display: inline-block;
+              background-color: #007bff; /* Blue background */
+              color: white; /* White text */
+              padding: 0.5rem 1rem; /* Add padding */
+              font-size: 1rem; /* Adjust font size */
+              text-decoration: none; /* Remove underline */
+              border-radius: 5px; /* Rounded corners */
+              margin-top: 1rem; /* Add spacing above the button */
+              transition: background-color 0.3s ease; /* Smooth hover effect */
+            }
+            
+            .view-more-btn:hover {
+              background-color: #0056b3; /* Darker blue on hover */
+            }
+        </style>
+    </head>
+
+    <body>
+    
+
+        <!-- Header  Section-->
+<header>
+    <div id="navbar" class="obj-width">
+        <a href="index.html"><img class="logo" src="images/imagee.png" alt=""></a>
+      
+    <ul id="menu">
+    <li><a href="#hero-section">Home</a></li>
+    <li><a href="#about-section">About</a></li>
+    <li><a href="#approved-jobs">Approved Jobs</a></li>
+    <li><a href="#submit-postings">Submit Postings</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#access-code-section" class="signup-btn">Admins</a></li>
+</ul>
+    
+
+      
+    <i id="bar" class='bx bx-menu'></i>
+        </div>
+
+</header>
+
+        <!-- Hero Section -->
+<div id="hero-section">
+  <section class="hero">
+    <div class="hero-box">
+      <div class="h-left">
+        <section class="hero-content">
+          <h1>Welcome to Central Careers, your future starts here!</h1>
+          <p>Whether you're a Central Indian looking for part-time work, hands-on experience, or your next big opportunity, we connect you with trusted employers in the community.</p>
+          <div class="search">
+            <input type="text" id="search-input" placeholder="Search for jobs, internships, or volunteer opportunities...">
+            <a href="#" id="search-button">Search</a>
+          </div>
+        </section>
+      </div>
+      <div class="hero-img">
+        <img src="images/image.png" alt="">
+      </div>
+    </div>
+  </section>
+</div>
+
+
+        <!-- About  Section-->
+<section class="about-section" id="about-section">
+        <h2>About Central Careers</h2>
+        <p>Central Careers is Central High School's official job and career connection platform desgined to help students explore real-world opportunties beyond the classroom. Central Careers connects you with local employers who are ready to invest in your potential. Every job listing is reviewed by our guidance department to ensure it's safe and beneficcial for our students.</p>
+        <h2>Our Mission</h2>
+        <p> To empower Central Indians with tools and opportunties that prepare them for life after high school-one application at a time.</p>
+
+        <div class="fe-box">
+            <div>
+                <img src="images/fe 1.png" 
+                alt="">
+                <h3>Browse Jobs</h3>
+                <p>Explore a variety of approved jobs, interships, and volunteer opportunities.</p>
+            </div>
+        </div>
+        <div class="fe-box">
+            <div>
+                <img src="images/fe 2.png" 
+                alt="">
+                <h3>Apply Directly Online</h3>
+                <p>Submit applications easily through our site with guidance support available if you need help.</p>
+            </div>
+        </div>
+        <div class="fe-box">
+            <div>
+                <img src="images/submit.png" 
+                alt="">
+                <h3>Submit Job Postings</h3>
+                <p>Local employers can share opportunities for students through a simple submission form.</p>
+            </div>
+        </div>
+        <div class="fe-box">
+            <div>
+                <img src="images/fe 4.png" 
+                alt="">
+                <h3>Stay Career-Ready</h3>
+                <p>Access resources and tips from counselors to help you build resumes, prep for interviews, and develop workplace skills.</p>
+            </div>
+        </div>
+ 
+        <!-- Approved Jobs  Section-->
+<!-- Approved Jobs Section -->
+<section id="approved-jobs" class="approved-jobs sec-space">
+  <h2>Approved Jobs</h2>
+  <p>Explore job postings, volunteer opportunities, and internships approved by our guidance department.</p>
+
+  <div class="job-categories">
+    <!-- Recent Jobs -->
+    <div class="job-box">
+      <h3>Recent Jobs</h3>
+      <ul>
+        <li>
+          <h4>Part-Time Cashier</h4>
+          <p>Company: Five Guys</p>
+          <p>Description: Take orders, prepare food, clean lobby area and bathrooms, maintain friendly, fast service, and work as a team player to support other employees.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: 15 hours/week</p>
+          <p>Pay: Up to $16 an hour</p>
+          <a href="#" class="apply-btn" onclick="openForm('Part-Time Cashier')">Apply Now</a>
+        </li>
+        <li>
+          <h4>Barista</h4>
+          <p>Company: Cup of Joe</p>
+          <p>Description: Prepare and serve beverages, take orders, handle payments, and ensure a positive experience for customers.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: Flexible</p>
+          <p>Pay: $15 an hour </p>
+          <a href="#" class="apply-btn" onclick="openForm('Barista')">Apply Now</a>
+        </li>
+        <li>
+            <h4>Crew Member</h4>
+            <p>Company: Culver's</p>
+            <p>Description: Greet customers, take orders, prep food, maintain cleanliness, adhere to safety standards, and ensure a positive experience for customers.</p>
+            <p>Location: Saint Joseph, Missouri</p>
+            <p>Hours: 15 hours/week</p>
+            <p>Pay: $13.75-$16.00 an hour </p>
+            <a href="#" class="apply-btn" onclick="openForm('Crew Member')">Apply Now</a>
+          </li>
+
+      </ul>
+    </div>
+
+    <!-- Part-time -->
+    <div class="job-box">
+      <h3>Part-time</h3>
+      <ul>
+        <li>
+          <h4>Retail Associate</h4>
+          <p>Company: Kohl's</p>
+          <p>Description: Deliver excellent customer service, assist customers with purchases, and contribute to the overall store operations.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: 15 hours/week</p>
+          <p>Pay: $13.75 an hour </p>
+          <a href="#" class="apply-btn" onclick="openForm('Retail Associate')">Apply Now</a>
+        </li>
+        <li>
+          <h4>Sales Associate</h4>
+          <p>Company: Five Below</p>
+          <p>Description: Maintain the sales floor, ensure merchandise is organized and stocked, and provide smooth transactions for customers at the register.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: Flexible</p>
+          <p>Pay: $13.75 an hour </p>
+          <a href="#" class="apply-btn" onclick="openForm('Sales Associate')">Apply Now</a>
+        </li>
+        <li>
+            <h4>Server</h4>
+            <p>Company: Olive Garden</p>
+            <p>Description: Take orders, serve food and drinks, handle payments, and maintain cleanliness of working environment. Maintain positive environment for coworkers and customers.</p>
+            <p>Location: Saint Joseph, Missouri</p>
+            <p>Hours: 15 hours/week</p>
+            <p>Pay: Up to $16 an hour (with tips) </p>
+            <a href="#" class="apply-btn" onclick="openForm('Server')">Apply Now</a>
+          </li>
+      </ul>
+    </div>
+   
+    
+
+    <!-- Internships -->
+    <div class="job-box">
+      <h3>Internships</h3>
+      <ul>
+        <li>
+          <h4>Marketing Intern</h4>
+          <p>Company: 1st Street Graphics Inc.</p>
+          <p>Description: As a Marketing Intern, you will gain hands-on experience in various aspects of marketing while supporting sales both wholesale and retail.</p>
+          <p>Location: Remote</p>
+          <p>Hours: 15-20 hours/week, 4 hour shifts</p>
+          <p>Pay: $15-$16 an hour </p>
+          <a href="#" class="apply-btn" onclick="openForm('Marketing Intern')">Apply Now</a>
+        </li>
+        <li>
+          <h4>Aquatic Intern</h4>
+          <p>Company: City Of Saint Joseph</p>
+          <p>Description: Explore various aspects of an aquatic program, while gaining knowledge and hands-on experience needed to work in the aquatic field.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Duration: Flexible</p>
+          <p>Pay: $17.75-$18 an hour </p>
+          <a href="#" class="apply-btn" onclick="openForm('Aquatic Intern')">Apply Now</a>
+        </li>
+        <li>
+            <h4>Administrative Intern- Analytics</h4>
+            <p>Company: Mosaic Life Care</p>
+            <p>Description: Designed for students to gain practical experience in a healthcare setting. The intern will focus on understanding organizational operations.</p>
+            <p>Location: Saint Joseph, Missouri</p>
+            <p>Duration: 1-Year</p>
+            <p>Pay: $18-$20 an hour </p>
+            <a href="#" class="apply-btn" onclick="openForm('Administrative Intern- Analytics')">Apply Now</a>
+          </li>
+      </ul>
+    </div>
+
+    <!-- Volunteer Opportunities -->
+    <div class="job-box">
+      <h3>Volunteer Opportunities</h3>
+      <ul>
+        <li>
+          <h4>Safety Town Volunteer</h4>
+          <p>Organization: Saint Joseph Safety & Health Council</p>
+          <p>Description: Help set up safety town and introduce children to the importance and methods of safety, especially pedestrian safety.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: Flexible</p>
+          <a href="#" class="apply-btn" onclick="openForm('Safety Town Volunteer')">Apply Now</a>
+        </li>
+        <li>
+          <h4>Edison Elementary Volunteer</h4>
+          <p>Organization: Edison Elementary School</p>
+          <p>Description: Set up fun activies for children and help run games for families. May be required to clean up trash and hand out tickets.</p>
+          <p>Location: Saint Joseph, Missouri</p>
+          <p>Hours: Flexible</p>
+          <a href="#" class="apply-btn" onclick="openForm('Edison Elementary Volunteer')">Apply Now</a>
+        </li>
+        <li>
+            <h4>Hospital Volunteer</h4>
+            <p>Organization: Mosaic Life Care Hospital </p>
+            <p>Description: Guided patients throughout the hospital, greet visitors, provide companionship, help with administrative tasks, and cleaning, </p>
+            <p>Location: Saint Joseph, Missouri</p>
+            <p>Hours: 4 hours/per week </p>
+            <a href="#" class="apply-btn" onclick="openForm('Hospital Volunteer')">Apply Now</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Application Form Modal -->
+<div id="application-form-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeForm()">&times;</span>
+    <h2>Apply for <span id="job-title"></span></h2>
+    <form action="submit-application.php" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="experience">Experience:</label>
+      <textarea id="experience" name="experience" rows="4" required></textarea>
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+      <button type="submit" class="apply-btn">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<!-- Submit Postings Section -->
+<section id="submit-postings" class="submit-postings sec-space">
+  <h2>Submit a Job Posting</h2>
+  <p>Employers can use this form to submit job postings for review. Once approved, they will appear on the job board.</p>
+  <form action="submit-job.php" method="POST" enctype="multipart/form-data" class="submit-form">
+    <label for="company-name">Company Name:</label>
+    <input type="text" id="company-name" name="company_name" required>
+
+    <label for="job-title">Job Title:</label>
+    <input type="text" id="job-title" name="job_title" required>
+
+    <label for="job-description">Job Description:</label>
+    <textarea id="job-description" name="job_description" rows="4" required></textarea>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="pay">Pay (e.g., $15/hour):</label>
+    <input type="text" id="pay" name="pay" required>
+
+    <label for="hours">Hours (e.g., 15 hours/week):</label>
+    <input type="text" id="hours" name="hours" required>
+
+    <label for="requirements">Requirements:</label>
+    <textarea id="requirements" name="requirements" rows="4"></textarea>
+
+    <button type="submit" class="apply-btn">Submit Posting</button>
+  </form>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section sec-space">
+    <h2>Contact Us</h2>
+    <p>We’re here to help! Explore resources, tips, and get in touch with your counselors for guidance.</p>
+
+    <!-- Resources Section -->
+    <div id="resources" class="contact-card">
+        <h3><i class="bx bx-book"></i> Resources for Students</h3>
+        <p>Explore helpful resources to guide you in your career journey:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/learning/" target="_blank"><i class="bx bx-link-external"></i> LinkedIn Learning</a> - Learn new skills and boost your resume.</li>
+            <li><a href="https://www.khanacademy.org/" target="_blank"><i class="bx bx-link-external"></i> Khan Academy</a> - Free courses to improve your knowledge.</li>
+            <li><a href="https://www.coursera.org/" target="_blank"><i class="bx bx-link-external"></i> Coursera</a> - Online courses from top universities.</li>
+            <li><a href="https://www.indeed.com/" target="_blank"><i class="bx bx-link-external"></i> Indeed</a> - Find job opportunities and internships.</li>
+        </ul>
+    </div>
+
+    <!-- Tips Section -->
+    <div id="tips" class="contact-card">
+        <h3><i class="bx bx-bulb"></i> Tips for Students</h3>
+        <p>Here are some tips to help you succeed in your job search:</p>
+        <ul>
+            <li><i class="bx bx-check-circle"></i> Keep your resume updated and tailored to the job you're applying for.</li>
+            <li><i class="bx bx-check-circle"></i> Practice common interview questions to build confidence.</li>
+            <li><i class="bx bx-check-circle"></i> Network with professionals in your field of interest.</li>
+            <li><i class="bx bx-check-circle"></i> Take advantage of internships and volunteer opportunities to gain experience.</li>
+        </ul>
+    </div>
+
+    <!-- Get in Contact with Counselors Section -->
+    <div id="contact-counselors" class="contact-card">
+        <h3>Get in Contact with Counselors</h3>
+        <p>If you have any questions or need guidance, feel free to reach out to our counselors:</p>
+        <ul>
+            <li><strong>Mrs. Arney</strong> - <a href="CaseyArney@sjsd.k12.mo.us">CaseyArney@sjsd.k12.mo.us</a></li>
+            <li><strong>Mrs. Dudeck</strong> - <a href=SarahDudeck@sjsd.k12.mo.us>SarahDudeck@sjsd.k12.mo.us</a></li>
+        </ul>
+        <form action="submit-contact.php" method="POST" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="apply-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Access Code Prompt for Admins -->
+<section id="access-code-section" class="access-code-section sec-space">
+    <h2>Admin Access</h2>
+    <p>Please enter the admin access code to view restricted sections:</p>
+    <div class="access-code-container">
+        <input type="password" id="access-code" placeholder="Enter Admin Access Code">
+        <button onclick="checkAdminAccessCode()">Submit</button>
+    </div>
+    <p id="access-error" style="color: red; display: none;">Invalid access code. Please try again.</p>
+</section>
+
+<!-- Counselor Approval Section -->
+<section id="counselor-approval" class="counselor-approval sec-space" style="display: none;">
+    <h2>Counselor Approval</h2>
+    <p>Below are job postings awaiting approval. Counselors can approve or reject them.</p>
+    <ul>
+        <li>
+            <h4>Job Title: Part-Time Cashier</h4>
+            <p><strong>Company:</strong> McDonald's</p>
+            <p><strong>Description:</strong> Take orders, prepare food, clean lobby area, and maintain friendly service.</p>
+            <p><strong>Location:</strong> Saint Joseph, Missouri</p>
+            <p><strong>Pay:</strong> $13.75/hour</p>
+            <button class="approve-btn" onclick="approvePosting('Part-Time Cashier')">Approve</button>
+            <button class="reject-btn" onclick="rejectPosting('Part-Time Cashier')">Reject</button>
+        </li>
+        <li>
+            <h4>Job Title: Stocker</h4>
+            <p><strong>Company:</strong> Target</p>
+            <p><strong>Description:</strong> Stock shelves as needed.</p>
+            <p><strong>Location:</strong> Saint Joseph, Missouri</p>
+            <p><strong>Pay:</strong> $15/hour</p>
+            <button class="approve-btn" onclick="approvePosting('Barista')">Approve</button>
+            <button class="reject-btn" onclick="rejectPosting('Barista')">Reject</button>
+        </li>
+
+        <li>
+            <h4>Job Title: Cashier</h4>
+            <p><strong>Company:</strong> Boudreaux's Louisiana Seafood & Steak </p>
+            <p><strong>Description:</strong> Take customer's orders.</p>
+            <p><strong>Location:</strong> Saint Joseph, Missouri</p>
+            <p><strong>Pay:</strong> $13.75/hour</p>
+            <button class="approve-btn" onclick="approvePosting('Barista')">Approve</button>
+            <button class="reject-btn" onclick="rejectPosting('Barista')">Reject</button>
+        </li>
+
+
+
+    </ul>
+</section>
+
+<!-- View Applicants Section -->
+<section id="view-applicants" class="view-applicants sec-space" style="display: none;">
+    <h2>View Applicants</h2>
+    <p>Below is a list of applicants for the job postings.</p>
+    <ul>
+        <li>
+            <h4>Job Title: Part-Time Cashier</h4>
+            <p><strong>Name:</strong> Doaa Hamdouni</p>
+            <p><strong>Email:</strong> doaahamdouni@gmail.com</p>
+            <p><strong>Phone Number:</strong> 8167521529</p>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Address:</strong> 123 Main Street, Saint Joseph, MO</p>
+            <p><strong>Experience:</strong> 1 year of customer service experience</p>
+            <p><strong>Resume:</strong> <a href="resumes/john_doe_resume.pdf" download>Download</a></p>
+        </li>
+        <li>
+            <h4>Job Title: Barista</h4>
+            <p><strong>Name:</strong> Israa Hamdouni</p>
+            <p><strong>Email:</strong> israahamdouni@gmail.com</p>
+            <p><strong>Phone Number:</strong> (816) 654-3210</p>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Address:</strong> 456 Elm Street, Saint Joseph, MO</p>
+            <p><strong>Experience:</strong> 2 years of barista experience</p>
+            <p><strong>Resume:</strong> <a href="resumes/jane_smith_resume.pdf" download>Download</a></p>
+        </li>
+        <li>
+            <h4>Volunteer Opportunities Title: Safety Town Volunteer </h4>
+            <p><strong>Name:</strong> Angelynn Tran</p>
+            <p><strong>Email:</strong> angelynntran@gmail.com</p>
+            <p><strong>Phone Number:</strong> (816) 654-3210</p>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Address:</strong> 456 Elm Street, Saint Joseph, MO</p>
+            <p><strong>Resume:</strong> <a href="resumes/jane_smith_resume.pdf" download>Download</a></p>
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<script>
+  function checkAdminAccessCode() {
+    const correctCode = "0308"; // Set your admin access code here
+    const enteredCode = document.getElementById("access-code").value;
+
+    if (enteredCode === correctCode) {
+      // Show both the Counselor Approval and View Applicants sections
+      document.getElementById("counselor-approval").style.display = "block";
+      document.getElementById("view-applicants").style.display = "block";
+      // Hide the Access Code section
+      document.getElementById("access-code-section").style.display = "none";
+    } else {
+      // Show an error message
+      document.getElementById("access-error").style.display = "block";
+    }
+  }
+
+  function approvePosting(jobTitle) {
+    alert(`The job posting "${jobTitle}" has been approved.`);
+    // You can add logic here to hide the approved job from the list
+  }
+
+  function rejectPosting(jobTitle) {
+    alert(`The job posting "${jobTitle}" has been rejected.`);
+    // You can add logic here to hide the rejected job from the list
+  }
+</script>
+
+<script>
+  document.querySelector('.submit-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    const formData = new FormData(this);
+
+    // Send the form data to the server using Fetch API
+    fetch('submit-job.php', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => response.text())
+      .then(data => {
+        alert(data); // Display the server response
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the form.');
+      });
+  });
+</script>
+
+<!-- Footer Section -->
+<footer id="footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Central Careers</h3>
+            <p>Central Careers is dedicated to connecting students with job opportunities, internships, and resources to help them succeed in their career journey.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#approved-jobs">Approved Jobs</a></li>
+                <li><a href="#submit-postings">Submit Postings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@centralcareers.com">info@centralcareers.com</a></p>
+            <p>Phone: 816-671-4080<p></p>
+                <p>  816-671-4474</p>
+            <p>Address: 2602 Edmond St Central High School, Saint Joseph, MO</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Central Careers. All rights reserved.</p>
+    </div>
+</footer>
+
+        <script src="toggle.js"></script>
+    </body>
+
+</html>
